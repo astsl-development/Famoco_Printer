@@ -1,0 +1,25 @@
+{
+  "name": "com-famoco-printer-plugin",
+  "version": "1.0.0",
+  "description": "Famoco Printer Plugin",
+  "cordova": {
+    "id": "com-famoco-printer-plugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astsl-development/Famoco_Printer.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Alliance Development",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/astsl-development/Famoco_Printer/issues"
+  },
+  "homepage": "https://github.com/astsl-development/Famoco_Printer#readme"
+}

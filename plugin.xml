@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com-famoco-printer-plugin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>FamocoPrinter</name>
+    <js-module name="FamocoPrinter" src="www/FamocoPrinter.js">
+        <clobbers target="cordova.plugins.FamocoPrinter" />
+    </js-module>
+
+
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="FamocoPrinter">
+                <param name="android-package" value="com.FamocoPrinter" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+
+
+        <source-file src="src/android/FamocoPrinter.java" target-dir="src/com" />
+        <source-file src="src/android/PX400Printer.java" target-dir="src/com" />
+        <source-file src="src/android/Util.java" target-dir="src/com" />
+        <lib-file src="src/android/cloudpossdkV1.5.3.089_Standard_20220104.aar"/>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.CLOUDPOS_PRINTER" />
+        </config-file>
+    </platform>
+</plugin>
