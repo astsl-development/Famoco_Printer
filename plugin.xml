@@ -19,7 +19,8 @@
         <source-file src="src/android/FamocoPrinter.java" target-dir="src/com" />
         <source-file src="src/android/PX400Printer.java" target-dir="src/com" />
         <source-file src="src/android/Util.java" target-dir="src/com" />
-        <lib-file src="src/android/cloudpossdkV1.5.3.089_Standard_20220104.aar"/>
+        <framework src="src/android/cloudpossdk.gradle" custom="true" type="gradleReference"/>
+        <lib-file src="src/android/cloudpossdk-1.5.2.aar"/>
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.CLOUDPOS_PRINTER" />
         </config-file>

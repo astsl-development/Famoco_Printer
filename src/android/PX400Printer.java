@@ -9,7 +9,7 @@ import com.cloudpos.POSTerminal;
 import com.cloudpos.printer.Format;
 import com.cloudpos.printer.PrinterDevice;
 import com.wizarpos.htmllibrary.PrinterHtmlListener;
-import net.glxn.qrgen.android.QRCode;
+// import net.glxn.qrgen.android.QRCode;
 
 public class PX400Printer {
     Context context;
@@ -92,18 +92,18 @@ public class PX400Printer {
      *
      * @param data, qr-code content
      */
-    public void printQrCode(String data) {
-        Bitmap bitmap = QRCode.from(data).bitmap();
-        try {
-            Format format = new Format();
-            format.setParameter(Format.FORMAT_ALIGN, Format.FORMAT_ALIGN_CENTER);
-            device.printBitmap(format, bitmap);
-            Util.info("Print Bitmap succeed!");
-        } catch (DeviceException ex) {
-            Util.error("Print Bitmap Failed!");
-            ex.printStackTrace();
-        }
-    }
+    // public void printQrCode(String data) {
+    //     Bitmap bitmap = QRCode.from(data).bitmap();
+    //     try {
+    //         Format format = new Format();
+    //         format.setParameter(Format.FORMAT_ALIGN, Format.FORMAT_ALIGN_CENTER);
+    //         device.printBitmap(format, bitmap);
+    //         Util.info("Print Bitmap succeed!");
+    //     } catch (DeviceException ex) {
+    //         Util.error("Print Bitmap Failed!");
+    //         ex.printStackTrace();
+    //     }
+    // }
 
     public void endPrint() {
         try {
