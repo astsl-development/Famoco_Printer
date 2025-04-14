@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/astsl-development/Famoco_Printer/issues"
   },
-  "homepage": "https://github.com/astsl-development/Famoco_Printer#readme"
+  "homepage": "https://github.com/astsl-development/Famoco_Printer#readme",
+  "dependencies": {
+    "com-famoco-printer-plugin": "file:"
+  }
 }

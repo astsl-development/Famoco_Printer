@@ -50,7 +50,7 @@ public class PX400Printer {
     public void printText(String msg) {
         try {
             Format format = new Format();
-            format.setParameter(Format.FORMAT_FONT_SIZE, Format.FORMAT_FONT_SIZE_SMALL);
+            format.setParameter(Format.FORMAT_FONT_SIZE, Format.FORMAT_FONT_SIZE_MEDIUM);
             device.printText(format, msg);
             Util.info("Print Text succeed!");
         } catch (DeviceException ex) {
